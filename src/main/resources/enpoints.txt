@@ -1,0 +1,19 @@
+
+endpoint - Use
+GET - to fetch some details from server
+POST - To create new info on server
+PUT - To Update something on Server
+DELETE - To delete existing information
+
+
+
+Normally endpoints will have below responsibilities
+1. fetch some data
+2. Send some information and fetch related data
+3. To create data on server
+4. to update existing data.
+
+
+With GET request we can send information in 2 ways.
+1. Using path parameter
+2. Using query parameter
