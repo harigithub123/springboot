@@ -1,6 +1,7 @@
 package com.collegeadmision.springbootapp.hari.controller;
 
 import com.collegeadmision.springbootapp.hari.Student;
+import com.collegeadmision.springbootapp.hari.entity.StudentEntity;
 import com.collegeadmision.springbootapp.hari.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -37,8 +38,8 @@ public class StudentController {
     }
 
     @GetMapping(path = "getStudent")
-    public String getStudentInfo(@RequestParam("studentId") int id) {
-        Student s = studentService.getStudent(id);
+    public String getStudentInfo(@RequestParam("studentId") Long id) {
+        StudentEntity s = studentService.getStudent(id);
         return s.toString();
     }
 

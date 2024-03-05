@@ -33,3 +33,13 @@ rest endpoint's
 
 
 dao/repository
+
+
+basic methods of Repository you should know
+save
+saveAll
+findById
+finaAll
+deleteById
+deleteAll
+
