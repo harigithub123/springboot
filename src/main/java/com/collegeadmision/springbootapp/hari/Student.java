@@ -10,6 +10,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Student {
+    private int id;
     private String name;
     private int rollNo;
     private String emailId;
@@ -17,7 +18,8 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", rollNo=" + rollNo +
                 ", emailId='" + emailId + '\'' +
                 '}';

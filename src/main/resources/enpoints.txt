@@ -17,3 +17,19 @@ Normally endpoints will have below responsibilities
 With GET request we can send information in 2 ways.
 1. Using path parameter
 2. Using query parameter
+
+
+4th March
+You can send information to server using 3 ways
+1 - Path Parameter
+2 - Query Parameters/Request Parameters
+3 - Request Body  (POST, PUT, PATCH)
+
+
+api - application programing interface.
+endpoint's
+rest api's
+rest endpoint's
+
+
+dao/repository
