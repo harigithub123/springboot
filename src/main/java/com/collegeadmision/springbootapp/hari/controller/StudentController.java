@@ -43,4 +43,10 @@ public class StudentController {
         return s.toString();
     }
 
+    @GetMapping(path = "listStudent")
+    public List<StudentEntity> listAllRecords() {
+        List<StudentEntity> list = studentService.findAll();
+        return list;
+    }
+
 }

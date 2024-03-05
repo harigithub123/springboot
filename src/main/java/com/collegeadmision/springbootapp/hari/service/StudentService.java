@@ -20,11 +20,16 @@ public class StudentService {
         se.setName(s.getName());
         se.setEmailId(s.getEmailId());
         se.setRollNo(s.getRollNo());
+        se.setId(s.getId());
         StudentEntity createdObject = studentRepository.save(se);
         return "student Created with Id " + createdObject.getId();
     }
 
     public StudentEntity getStudent(Long id) {
         return studentRepository.findById(id).get();
+    }
+
+    public List<StudentEntity> findAll() {
+        return studentRepository.findAll();
     }
 }
