@@ -18,7 +18,6 @@ public class Student {
     @Min(value = 1)
     @Max(value = 150)
     private int rollNo;
-    //@Pattern(regexp = "[0-9]*[a-z]*[A-Z]*^@gmail.com")
     private String emailId;
     @NotBlank
     @Pattern(regexp = "[0-9]+")
