@@ -3,6 +3,7 @@ package com.collegeadmision.springbootapp.hari.controller;
 import com.collegeadmision.springbootapp.hari.Student;
 import com.collegeadmision.springbootapp.hari.entity.StudentEntity;
 import com.collegeadmision.springbootapp.hari.service.StudentService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +17,7 @@ public class StudentController {
     private StudentService studentService;
 
     @PostMapping(path = "saveStudent")
-    public void saveStudent(@RequestBody Student s) {
+    public void saveStudent(@Valid @RequestBody Student s) {
         studentService.createStudent(s);
     }
 

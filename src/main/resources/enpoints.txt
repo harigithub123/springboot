@@ -43,3 +43,13 @@ finaAll
 deleteById
 deleteAll
 
+
+
+Basic vlidations
+@NotNull (empty string is valid value)
+@NotBlank (null and empty strings are invalid values)
+@Pattern
+@Min, @Max
+@Size
+
+
