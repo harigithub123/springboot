@@ -32,4 +32,24 @@ public class StudentService {
     public List<StudentEntity> findAll() {
         return studentRepository.findAll();
     }
+
+    public void superMethod() {
+        callerMethod();
+    }
+
+    public void callerMethod() {
+        try {
+            throwException();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void throwException() {
+        if(Math.random()*100 < 5) {
+            throw new RuntimeException();
+        } else {
+            System.out.println("Fine.");
+        }
+    }
 }

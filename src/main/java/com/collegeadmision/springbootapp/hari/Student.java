@@ -21,7 +21,7 @@ public class Student {
     private String emailId;
     @NotBlank
     @Pattern(regexp = "[0-9]+")
-    @Size(min = 6, max = 6)
+    @Size(min = 6, max = 6, message = "Pin code size must be 6 characters.")
     private String pinCode;
 
     @Override

@@ -15,6 +15,7 @@ public class StudentEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String emailId;
+    private String address;
 
     @Override
     public String toString() {
