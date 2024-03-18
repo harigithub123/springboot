@@ -11,6 +11,7 @@ public class StateController {
     @GetMapping(path = "ListofStatesInTheWorld")
     public List<String> getStates() {
         return Arrays.asList("BIHAR", "MAHARASHTRA","JHARKHAND");
+
     }
 
 }
